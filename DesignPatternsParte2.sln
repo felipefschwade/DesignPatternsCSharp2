@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{B53D712D-3103-45D0-A121-A01F2ABB1C4D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightPattern", "FlyweightPattern\FlyweightPattern.csproj", "{50C75960-339F-400C-A174-F2C753FC791F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B53D712D-3103-45D0-A121-A01F2ABB1C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B53D712D-3103-45D0-A121-A01F2ABB1C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B53D712D-3103-45D0-A121-A01F2ABB1C4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C75960-339F-400C-A174-F2C753FC791F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C75960-339F-400C-A174-F2C753FC791F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C75960-339F-400C-A174-F2C753FC791F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C75960-339F-400C-A174-F2C753FC791F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
