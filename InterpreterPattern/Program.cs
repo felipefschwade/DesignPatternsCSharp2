@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterpreterPattern.VisitorPattern;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,8 @@ namespace InterpreterPattern
             var direita = new Subtracao(new Numero(13), new Numero(12));
             var divisao = new Multiplicacao(esquerda, direita);
             Console.WriteLine(divisao.Avalia());
+            var impressora = new ImpressoraPrefixaVisitor();
+            divisao.Aceita(impressora);
             Console.ReadKey();
         }
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InterpreterPattern.VisitorPattern;
 
 namespace InterpreterPattern
 {
@@ -16,6 +17,11 @@ namespace InterpreterPattern
 
         public IExpressao Esquerda { get; private set; }
         public IExpressao Direita { get; private set; }
+
+        public void Aceita(IVisitor visitor)
+        {
+            visitor.ImprimeDivisao(this);
+        }
 
         public int Avalia()
         {

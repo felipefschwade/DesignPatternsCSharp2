@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterpreterPattern.VisitorPattern;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,6 @@ namespace InterpreterPattern
     public interface IExpressao
     {
         int Avalia();
+        void Aceita(IVisitor visitor);
     }
 }

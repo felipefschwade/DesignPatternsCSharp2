@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InterpreterPattern.VisitorPattern;
 
 namespace InterpreterPattern
 {
@@ -14,6 +15,11 @@ namespace InterpreterPattern
         }
 
         public IExpressao Exp { get; private set; }
+
+        public void Aceita(IVisitor visitor)
+        {
+            throw new NotImplementedException();
+        }
 
         public int Avalia()
         {

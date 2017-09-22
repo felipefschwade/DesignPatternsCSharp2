@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterpreterPattern.VisitorPattern;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,5 +20,11 @@ namespace InterpreterPattern
         {
             return Nume;
         }
+
+        public void Aceita(IVisitor visitor)
+        {
+            visitor.ImprimeNumero(this);
+        }
+
     }
 }

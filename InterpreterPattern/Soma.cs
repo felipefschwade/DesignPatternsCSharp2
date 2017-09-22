@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterpreterPattern.VisitorPattern;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,5 +22,11 @@ namespace InterpreterPattern
         {
             return Esquerda.Avalia() + Direita.Avalia();
         }
+
+        public void Aceita(IVisitor visitor)
+        {
+            visitor.ImprimeSoma(this);
+        }
+
     }
 }

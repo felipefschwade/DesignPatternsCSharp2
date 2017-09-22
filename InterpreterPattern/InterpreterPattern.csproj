@@ -51,6 +51,9 @@
     <Compile Include="RaizQuadarada.cs" />
     <Compile Include="Soma.cs" />
     <Compile Include="Subtracao.cs" />
+    <Compile Include="VisitorPattern\ImpressoraPrefixaVisitor.cs" />
+    <Compile Include="VisitorPattern\ImpressoraVisitor.cs" />
+    <Compile Include="VisitorPattern\IVisitor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
